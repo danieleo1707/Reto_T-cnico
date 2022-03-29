@@ -1,6 +1,8 @@
 # Reto_T-cnico
 Esta es mi respuesta al reto de el juego de preguntas el cual va sumando puntos. El algoritmo se realizó en JavaScript en compañia de HTML y CSS. PAra el manejo de base de datos se utilizó indexDB directamente en el navegador. De esta manera se carga la información de preguntas y respuestas en diferentes tablas. Se utlizaron objetos para el almacenamiento y obtención de preguntas.
 
+Nota: Preferiblemente usar el navegador Microsft Edge o FireFox
+
 El juego funciona de la siguiente manera:
 
 1. Se carga la interfaz inicial del juego y posteriormente se debe dar en el botón "Bienvenido" para iniciar el juego. 
