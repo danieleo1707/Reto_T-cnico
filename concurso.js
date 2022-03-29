@@ -4,14 +4,6 @@ const IDBRequest= indexedDB.open("BasePreguntas",1);
 const IDBRequest2= indexedDB.open("BaseRespuestas",1);
 const IDBRequest3= indexedDB.open("BaseRespuestasCorrectas",1);
 
-
-// IDBRequest.addEventListener("upgradeneeded",()=>{
-// 	const db = IDBRequest.result;
-// 	db.createObjectStore("preguntas",{
-// 		autoIncrement: true
-// 	});
-// })
-
 const crearTabla = (Tabla, IDB)=>{
 
 IDB.addEventListener("upgradeneeded",()=>{
@@ -341,48 +333,6 @@ const leerObjetos =(tipoTabla,IDB1,key,posicionesRespuestas,IDB2,IDB3, contador)
 						return true	
 	}
 
-
-		
-
-
-
-
-
-
-	
-
-
-
-
-
-
-	
-		
-		//console.log(e.target.result.pregunta)
-			// conexion[0].openCursor().onsuccess=function(e){
-		 //  var cursor = e.target.result;
-  	// 	if (cursor) {
-  	// 		for (let k = 0; k < 5; k++) {
-  				
- 		// 		arrayRespuestas[k]=cursor.value;
-   //  		//console.log(cursor.value)
-   //  			//cursor.continue();
- 		//  }
-	// }
-	//console.log(yo);
-	//console.log(arrayRespuestas);
-	// return arrayRespuestas;
-	
-
-
-	// cursor.addEventListener("success",()=>{
-	// 	if(cursor.result){
-	// 		arrayRespuestas.push(cursor.result.value);
-	// 		//console.log(arrayRespuestas);
-	// 		cursor.result.continue();
-	// 	}else console.log("Todos los datos fueron leidos")
-
-	// })
 }
 
 const modificarObjetos= (key,objeto)=>{
@@ -641,9 +591,9 @@ boton.addEventListener("click",()=>{
     }
 
 	const mensaje=document.querySelector(".mensaje");
-	// const empezar=document.querySelector(".empezarDiv");
+	
 	mensaje.innerHTML="¡Empecemos el juego!";
-	// empezar.innerHTML=`<button class="empezar">EMPEZAR</button>`;
+	
 
 	const posicionesRespuestas=[];
 	const key= Math.round(Math.random()*5);
@@ -652,7 +602,6 @@ boton.addEventListener("click",()=>{
 	}
 
 	let contador=0
-	// leerObjetos(nombreTabla[key],IDBRequest,key,posicionesRespuestas,IDBRequest2);
 	leerObjetos(nombreTabla[key],IDBRequest,key,posicionesRespuestas,IDBRequest2,IDBRequest3,contador);
 	
 })
