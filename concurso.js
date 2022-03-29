@@ -152,6 +152,26 @@ const leerObjetos =(tipoTabla,IDB1,key,posicionesRespuestas,IDB2,IDB3, contador)
 		// const botonResD=document.querySelector(".botonD");
 		console.log(contador);
 		contador=contador+1;
+	
+		setTimeout(()=>{
+		if(nameTabla[key]=="Ciencia"){
+			const pintarFondo=document.querySelector(".contenedor");///////Cambio de colores de fondo
+			pintarFondo.style.background="#3ADA37";
+		}else if(nameTabla[key]=="Entretenimiento"){
+			const pintarFondo=document.querySelector(".contenedor");///////Cambio de colores de fondo
+			pintarFondo.style.background="#9260E3";
+		}else if(nameTabla[key]=="Geografia"){
+			const pintarFondo=document.querySelector(".contenedor");///////Cambio de colores de fondo
+			pintarFondo.style.background="#B0D132";
+		}else if(nameTabla[key]=="Literatura"){
+			const pintarFondo=document.querySelector(".contenedor");///////Cambio de colores de fondo
+			pintarFondo.style.background="#D54915";
+		}else if(nameTabla[key]=="Matematicas"){
+			const pintarFondo=document.querySelector(".contenedor");///////Cambio de colores de fondo
+			pintarFondo.style.background="#1E1DD5";
+		}
+		},2000);
+	
 		if(contador<=5){
 		requestResA.onsuccess=function(e){
 		const dibujaRespuestaCorrecta=e.target.result.respuesta;
