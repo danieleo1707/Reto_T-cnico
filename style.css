@@ -1,24 +1,61 @@
 body{
 background-color: #fff;
+font-family: monospace;
+}
+
+.rompecabeza{
+	margin-right: 300px;
+	display: inline-block;
+	width: 200px;
+	position: relative;
+	left: -200px;
+}
+
+.cine{
+	margin-left: 0px;
+	display: inline-block;
+	width: 200px;
+	position: relative;
+	left: 0px;
+}
+
+
+.quimica{
+	
+	display: inline-block;
+	width: 200px;
+	position: relative;
+	left: -250px;
+}
+
+.atrevete{
+	
+	width: 200px;
+	position: relative;
+	top: -400px;
+
 }
 
 .boton{
-	background: #355185;
+	background: #C09687;
 	color: #fff;
 	width: 150px;
 	height: 80px;
 	border: none;
+
 }
+
+
 
 .contenedor{
 	font-size: 50px;
 	text-align: center;
 	padding: 10px;
 	margin: 20px;
-	background: #498BCA;
+	background: #CFC2BE;
 	width: 95%;
 	height: 800px;
-	color: #fff;
+	color: #FFF;
 }
 
 .mensaje{
@@ -63,5 +100,8 @@ background-color: #fff;
 	background: #122E59;
 	box-shadow: 2px 4px 15px 0 #000;
 }
+
+
+
 
 
