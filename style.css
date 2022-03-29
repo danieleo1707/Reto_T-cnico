@@ -1,0 +1,67 @@
+body{
+background-color: #fff;
+}
+
+.boton{
+	background: #355185;
+	color: #fff;
+	width: 150px;
+	height: 80px;
+	border: none;
+}
+
+.contenedor{
+	font-size: 50px;
+	text-align: center;
+	padding: 10px;
+	margin: 20px;
+	background: #498BCA;
+	width: 95%;
+	height: 800px;
+	color: #fff;
+}
+
+.mensaje{
+	padding: 10px;
+	color: #fff;
+	font-size: 50px;
+}
+
+.boton:hover{
+	background: #122E59;
+	box-shadow: 2px 4px 15px 0 #000;
+}
+
+.empezar{
+	background: #355185;
+	color: #fff;
+	width: 300px;
+	height: 100px;
+	border: none;
+}
+
+.empezar:hover{
+	background: #122E59;
+	box-shadow: 2px 4px 15px 0 #000;
+}
+.pregunta{
+	padding: 20px;
+	font-size: 40px;
+}
+
+.botonA,.botonB,.botonC,.botonD{
+	padding: 10px;
+	background: #355185;
+	border-radius: 20px;
+	width: 200px;
+	border: 3px solid #122E59;
+	color: #fff;
+	font-size: 20px;
+}
+
+.botonA:hover,.botonB:hover,.botonC:hover,.botonD:hover{
+	background: #122E59;
+	box-shadow: 2px 4px 15px 0 #000;
+}
+
+
